@@ -1,10 +1,13 @@
 import Head from "next/head";
-import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
+import * as React from 'react';
+import { NextUIProvider } from '@nextui-org/react';
+
 
 export default function Home() {
-  return (
+  return ( 
+    <NextUIProvider>
     <div className={styles.container}>
       <Head>
         <title>Create Next App</title>
@@ -68,5 +71,6 @@ export default function Home() {
         </a>
       </footer>
     </div>
+    </NextUIProvider>
   );
 }
