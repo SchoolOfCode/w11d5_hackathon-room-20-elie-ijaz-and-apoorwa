@@ -1,8 +1,7 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-import Link from 'next/link'
-
+import Head from "next/head";
+import Image from "next/image";
+import styles from "../styles/Home.module.css";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -14,45 +13,45 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to Codewar Tutorial
-        </h1>
+        <h1 className={styles.title}>Welcome to Codewar Tutorial</h1>
 
         <p className={styles.description}>
-          Get started by registering {' '}
-          <code className={styles.code}><a href="https://www.codewars.com/join" target="_blank">here</a></code>
+          Get started by registering{" "}
+          <code className={styles.code}>
+            <a href="https://www.codewars.com/join" target="_blank">
+              here
+            </a>
+          </code>
         </p>
 
         <div className={styles.grid}>
-         
-           <Link href="/tips"><a target="_blank" className={styles.card}>
-            <h2>Tips on problem solving. &rarr;</h2>
-            <p>Problem solving a vital skill in the tech industry.</p>
-          </a></Link>
+          <Link href="/tips">
+            <a target="_blank" className={styles.card}>
+              <h2>Tips on problem solving. &rarr;</h2>
+              <p>Problem solving a vital skill in the tech industry.</p>
+            </a>
+          </Link>
 
           <Link href="/planning">
-          <a target="_blank" className={styles.card}>
-            <h2>Learn all about planning</h2>
-            <p>Planning is the key to coding success!</p>
-          </a></Link>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+            <a target="_blank" className={styles.card}>
+              <h2>Learn all about planning</h2>
+              <p>Planning is the key to coding success!</p>
+            </a>
+          </Link>
+          <Link href="https://www.codewars.com/collections/good-examples-1">
+            <a target="_blank" className={styles.card}>
+              <h2>Codewars Examples &rarr;</h2>
+              <p>
+                Here are some of the examples to get you start with Codewars
+              </p>
+            </a>
+          </Link>
+          <Link href="/helpfulresources">
+            <a target="_blank" className={styles.card}>
+              <h2>Helpful Resources &rarr;</h2>
+              <p>Find the help you need for your Codewars</p>
+            </a>
+          </Link>
         </div>
       </main>
 
@@ -62,12 +61,12 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
+          Powered by{" "}
           <span className={styles.logo}>
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
         </a>
       </footer>
     </div>
-  )
+  );
 }
