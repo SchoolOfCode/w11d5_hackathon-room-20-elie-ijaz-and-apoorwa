@@ -1,0 +1,7 @@
+MVP:
+1) We are going to create a web app with next.js
+2) Create a next.js tutorial app with some links to videos.
+
+NonMVP:
+1) Add Auth0 to app for a sign in. 
+2) Deploy to Vercel. 
