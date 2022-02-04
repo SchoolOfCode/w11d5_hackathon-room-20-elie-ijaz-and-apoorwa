@@ -25,15 +25,16 @@ export default function Home() {
 
         <div className={styles.grid}>
          
-           <Link href="/tips"><a className={styles.card}>
+           <Link href="/tips"><a target="_blank" className={styles.card}>
             <h2>Tips on problem solving. &rarr;</h2>
             <p>Problem solving a vital skill in the tech industry.</p>
           </a></Link>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+          <Link href="/planning">
+          <a target="_blank" className={styles.card}>
+            <h2>Learn all about planning</h2>
+            <p>Planning is the key to coding success!</p>
+          </a></Link>
 
           <a
             href="https://github.com/vercel/next.js/tree/canary/examples"
